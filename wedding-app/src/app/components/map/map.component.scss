@@ -1,0 +1,30 @@
+:host {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100dvh;
+  background-color: rgb(164, 185, 160);
+  flex-shrink: 0;
+  border-radius: 32px;
+
+  @media (max-width: 1024px) {
+    min-height: revert;
+  }
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex: 1;
+}
+
+.container-button {
+  color: rgb(41, 45, 26);
+  background-color: rgb(255, 222, 229);
+}
+
+.container-button:active {
+  background-color: rgb(217 175 184);
+}
