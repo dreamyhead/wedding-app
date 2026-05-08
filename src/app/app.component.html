@@ -1,0 +1,30 @@
+@if (isMobile()) {
+  <swiper-container class="swiper-container" direction="vertical" space-between="0" speed="750" parallax="true">
+    <swiper-slide>
+      <app-main></app-main>
+    </swiper-slide>
+    <swiper-slide>
+      <app-place></app-place>
+    </swiper-slide>
+    <swiper-slide>
+      <app-time-line></app-time-line>
+    </swiper-slide>
+    <swiper-slide>
+      <app-dress-code></app-dress-code>
+    </swiper-slide>
+    <swiper-slide>
+      <app-chat></app-chat>
+    </swiper-slide>
+    <swiper-slide>
+      <app-footer></app-footer>
+    </swiper-slide>
+  </swiper-container>
+} @else {
+  <div class="app">
+    <div class="app-content">
+      Скоро будет полноценная версия для десктопов, а пока можете открыть сайт на телефоне.
+      <br />
+      Спасибо за понимание!
+    </div>
+  </div>
+}

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg"
+     viewBox="110 60 380 440"
+     preserveAspectRatio="xMidYMid meet">
+  <path d="M300 155
+           C255 85 185 105 150 205
+           C120 300 205 370 270 435
+           C330 390 420 325 460 235
+           C495 150 365 85 300 155
+           Z"
+        fill="hsl(199.44deg 97.26% 85.69%)"/>
+</svg>

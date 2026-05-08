@@ -1,0 +1,78 @@
+:host {
+  // background: linear-gradient(0deg,rgba(222, 214, 129, 1) 0%, rgba(204, 197, 100, 1) 100%);
+  background: transparent;
+  display: block;
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.chat-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+
+.chat {
+  position: relative;
+  width: 100%;
+  flex: 1;
+  background-image: url('/assets/svg/chat-bg-2.svg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+.chat-content {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  transform: translate(-50%, -50%);
+  width: min(70vw, 280px);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.chat-title {
+  margin: 0;
+  color: #011549;
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: clamp(2.5rem, 18vw, 3.5rem);
+  font-weight: bold;
+  line-height: 1;
+}
+
+.chat-description-item {
+  margin: 0;
+  color: #011549;
+  font-family: "Playpen Sans", cursive;
+  font-size: clamp(1rem, 24vw, 1.15rem);
+  text-wrap: balance;
+}
+
+.chat-button-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100px;
+}
+
+.chat-button {
+  display: inline-block;
+  padding: 18px 48px;
+  background-color: #011549;
+  color: #fff;
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: clamp(1rem, 14vw, 1.5rem);
+  text-decoration: none;
+  border: none;
+  border-radius: 50px;
+}

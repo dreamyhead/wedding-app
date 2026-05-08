@@ -1,0 +1,129 @@
+:host {
+  background: transparent;
+  // background: linear-gradient(0deg,rgba(204, 197, 100, 1) 0%, rgba(222, 214, 129, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+:host-context(swiper-slide.swiper-slide-active) .timeline-item {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.dress-code {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex: 1;
+  width: 100%;
+  padding: 16px;
+}
+
+.dress-code-title {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  background-image: url('/assets/svg/dresscode-title-back.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  padding: 40px 0;
+  color: #011549;
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  margin: 0;
+  z-index: 1;
+}
+
+.dress-code-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.dress-code-description-item {
+  color: #011549;
+  font-size: 20px;
+  text-align: center;
+  text-wrap: balance;
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dress-code-description-palette {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  flex: 1;
+  font-family: "Playpen Sans", cursive;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  color: #011549;
+  font-size: 20px;
+  text-align: center;
+  text-wrap: balance;
+  gap: 20px;
+}
+
+.palette-block {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  flex: 1;
+  border-radius: 24px;
+}
+
+.palette-block-item-1 {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/svg/palette-block-item-1.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.palette-block-item-2 {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/svg/palette-block-item-2.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.palette-block-item-3 {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/svg/palette-block-item-3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.palette-block-item-4 {
+  width: 80px;
+  height: 80px;
+  background-image: url('/assets/svg/palette-block-item-4.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}

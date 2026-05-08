@@ -1,0 +1,71 @@
+:host {
+  background: transparent;
+  // background: linear-gradient(0deg,rgba(204, 197, 100, 1) 0%, rgba(222, 214, 129, 1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+:host-context(swiper-slide.swiper-slide-active) .footer-image {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  width: 100%;
+  height: 100%;
+}
+
+.footer-title {
+  color: #011549;
+  text-align: center;
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: 3.5rem;
+  font-weight: bold;
+  text-wrap: balance;
+  margin: 0;
+}
+
+.footer-description {
+  color: #011549;
+  text-align: center;
+  font-family: "Playpen Sans", cursive;
+  font-size: clamp(1rem, 24vw, 1.15rem);
+  text-wrap: balance;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  position: relative;
+  gap: 16px;
+
+  flex: 1;
+  width: 100%;
+  padding: 60px 24px;
+}
+
+.footer-image {
+  width: auto;
+  height: 200px;
+  transform: translateX(-100%);
+  opacity: 0;
+  transition: 
+    transform 1s ease,
+    opacity 0.5s ease;
+  will-change: transform, opacity;
+  z-index: 2;
+  transition-delay: 0.4s;
+}
