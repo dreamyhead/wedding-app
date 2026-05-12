@@ -5,6 +5,7 @@ import { PlaceComponent } from './components/place/place.component';
 import { TimeLineComponent } from './components/time-line/time-line.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { ChatComponent } from './components/chat/chat.component';
+import { FormComponent } from './components/form/form.component';
 
 @Component({
   selector: 'app-root',
@@ -15,6 +16,7 @@ import { ChatComponent } from './components/chat/chat.component';
     PlaceComponent,
     ChatComponent,
     FooterComponent,
+    FormComponent,
   ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',

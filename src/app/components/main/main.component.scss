@@ -1,19 +1,93 @@
 :host {
   background: transparent;
-  //background: linear-gradient(0deg,rgba(224, 217, 168, 1) 0%, rgba(247, 239, 208, 1) 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  height: 100%;
+  height: 100dvh;
   position: relative;
   overflow: hidden;
+  padding: 16px 0;
 }
 
-// :host-context(swiper-slide.swiper-slide-active) .main-background {
-//   opacity: 1;
-// }
+.main-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  flex: 1;
+  opacity: 1;
+  background: url('/wedding-app/assets/svg/chat-bg-2.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  position: relative;
+  
+  transition-delay: 0.25s;
+}
+
+.main-body-title {
+  position: absolute;
+  display: flex;
+  top: 35%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(-10deg);
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: clamp(2rem, 18vw, 3rem);
+  font-weight: bold;
+  text-align: center;
+  text-wrap: balance;
+  line-height: 1;
+  color: #4f4892;
+  max-width: 200px;
+}
+
+.main-body-image {
+  position: absolute;
+  bottom: -25px;
+  width: 100%;
+  max-width: 350px;
+  will-change: opacity;
+}
+
+.main-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 24px 52px;
+  background: url('/wedding-app/assets/svg/main-bg.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 2;
+  gap: 16px;
+}
+
+.main-footer-title {
+  width: 100%;
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 4px;
+  color: #f5f2c8;
+}
+
+.main-footer-date {
+  font-family: 'Ura Bum Bum SP', cursive, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #011549;
+  padding: 8px 16px;
+  border-radius: 32px;
+  background-color: #f5f2c8;
+}
 
 .main {
   display: flex;
