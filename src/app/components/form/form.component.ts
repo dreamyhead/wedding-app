@@ -8,6 +8,6 @@ import { Component } from '@angular/core';
 })
 export class FormComponent {
   openForm() {
-    window.open('https://forms.yandex.ru/u/6a04b61b068ff06eda0d5936/', '_blank');
+    window.open('https://forms.yandex.ru/u/6a04b8145056909725f6ca70/', '_blank');
   }
 }
